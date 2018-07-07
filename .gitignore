@@ -3,6 +3,7 @@
 *.class
 .vscode
 .intellij
+.idea
 *.pyc
 __pycache__
 .coverage
