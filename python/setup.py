@@ -12,9 +12,11 @@ setup(
     version='0.4.0',
     author='TnL Community',
     author_email='community@todandlorna.com',
-    url='http://www.todandlorna.com',
+    url='https://github.com/JohnEarnest/Base-A',
     packages=['basea'],
     description='encoding scheme for converting between small integers and names which would be appropriate for 260-foot tall, giant-monster-punching robots',
     long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     install_requires=requires,
+    license='MIT'
 )
