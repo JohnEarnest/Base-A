@@ -15,7 +15,7 @@ A few examples:
 | 6    |Cobra Judas          |
 | 7    |Coyote Gauntlet      |
 
-This repository offers bi-directional dependency-free Base-Ä converters in several popular languages (ES6, Java, C, K), each with a robust test fixture.
+This repository offers bi-directional dependency-free Base-Ä converters in several popular languages (ES6, Java, C, K, Python), each with a robust test fixture.
 
 The Encoding
 ============
@@ -87,6 +87,24 @@ Test script:
 
 	> cd k7
 	> k7 test.k
+	
+Python
+---
+The `basea` package has a `basea` object instance which has the computed encoding values.  This object exposes an API composed of:
+
+- `basea.max`: the maximum int encodable in Base-Ä. (4095)
+- `basea.valid(name)`: returns `True` if `name` can be decoded in Base-Ä.
+- `basea.encode(number)`: convert an int/float/Decimal `number` into a Base-Ä string. Invalid values result in a `ValueError`.
+- `basea.decode(name)`: convert a string `name` into an int. Invalid strings result in a `ValueError`.
+
+As a small example:
+
+    from basea import basea
+    
+    basea.encode(4)  # Challenger Redeemer
+    basea.decode('Challenger Redeemer')  # 4
+
+Test via `nose` by installing `nose nose-ignore-docstring coverage`
 
 License (MIT)
 =============
