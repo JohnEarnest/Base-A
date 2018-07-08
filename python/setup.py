@@ -18,5 +18,13 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     install_requires=requires,
-    license='MIT'
+    license='MIT',
+    classifiers=(
+        "Development Status :: 5 - Production/Stable",
+        "Programming Language :: Python",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Topic :: Religion",
+        "Topic :: Utilities"
+    ),
 )
