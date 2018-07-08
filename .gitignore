@@ -4,6 +4,10 @@
 .vscode
 .intellij
 .idea
+
+# Python stuff
 *.pyc
 __pycache__
 .coverage
+dist
+basea.egg-info
