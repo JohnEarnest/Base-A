@@ -9,7 +9,7 @@ requires = [ir.strip() for ir in install_requires]
 
 setup(
     name='basea',
-    version='0.4.0',
+    version='0.4.1',
     author='TnL Community',
     author_email='community@todandlorna.com',
     url='https://github.com/JohnEarnest/Base-A',
