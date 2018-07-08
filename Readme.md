@@ -97,14 +97,18 @@ The `basea` package has a `basea` object instance which has the computed encodin
 - `basea.encode(number)`: convert an int/float/Decimal `number` into a Base-Ä string. Invalid values result in a `ValueError`.
 - `basea.decode(name)`: convert a string `name` into an int. Invalid strings result in a `ValueError`.
 
-As a small example:
+A small example:
 
     from basea import basea
     
     basea.encode(4)  # Challenger Redeemer
     basea.decode('Challenger Redeemer')  # 4
 
-Test via `nose` by installing `nose nose-ignore-docstring coverage`
+Test script:
+
+    > cd python
+    > pip install nose nose-ignore-docstring coverage
+    > nose
 
 License (MIT)
 =============
