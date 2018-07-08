@@ -4,8 +4,13 @@ The implementation of Base-Ä items
 """
 from decimal import Decimal
 
-from six import string_types
+# This is reimplementing the one thing we need from the "six" module
+import sys
 
+if sys.version_info[0] == 3:
+    string_types = str,
+else:
+    string_types = basestring,
 
 class _Thing(object):
 
